@@ -14,15 +14,15 @@ import com.badlogic.gdx.math.Rectangle;
 import org.w3c.dom.css.Rect;
 
 import java.util.Random;
-
+//Main File
 public class FlappyBird extends ApplicationAdapter {
-	SpriteBatch batch;
+	private SpriteBatch batch;
 
-	Texture backgroundImage;
-	Texture birdImages[];
-	Texture topTube;
-	Texture bottomTube;
-	Texture gameOver;
+	private Texture backgroundImage;
+	private Texture birdImages[];
+	private Texture topTube;
+	private Texture bottomTube;
+	private Texture gameOver;
 
 
 	Circle birdCircle;
