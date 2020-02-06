@@ -14,7 +14,7 @@ import com.badlogic.gdx.math.Rectangle;
 import org.w3c.dom.css.Rect;
 
 import java.util.Random;
-//Main File
+
 public class FlappyBird extends ApplicationAdapter {
 	private SpriteBatch batch;
 
