@@ -19,38 +19,38 @@ public class FlappyBird extends ApplicationAdapter {
 	private SpriteBatch batch;
 
 	private Texture backgroundImage;
-	private Texture birdImages[];
+	private Texture[] birdImages;
 	private Texture topTube;
 	private Texture bottomTube;
 	private Texture gameOver;
 
 
-	Circle birdCircle;
+	private Circle birdCircle;
 
-	Rectangle topTubeRectangles[];
-	Rectangle bottomTubeRectangles[];
+	private Rectangle topTubeRectangles[];
+	private Rectangle bottomTubeRectangles[];
 
-	BitmapFont font;
-	int flapState = 0;
-	float birdY = 0;
-	float velocity = 0;
-	int gameState = 0;
-	float gravity = 2;
-	float gap = 600;
-	float maxPipeOffset;
-	Random randomGenerator;
-	float tubeVelocity = 4;
-	int numberOfTubes = 4;
-	float tubeX[] = new float[numberOfTubes];
-	float tubeOffset[] = new float[numberOfTubes];
-	float distanceBetweenTubes;
-	int score = 0;
-	int scoringTube = 0;
+	private BitmapFont font;
+	private int flapState = 0;
+	private float birdY = 0;
+	private float velocity = 0;
+	private int gameState = 0;
+	private float gravity = 2;
+	private float gap = 500;
+	private float maxPipeOffset;
+	private Random randomGenerator;
+	private float tubeVelocity = 4;
+	private int numberOfTubes = 4;
+	private float tubeX[] = new float[numberOfTubes];
+	private float tubeOffset[] = new float[numberOfTubes];
+	private float distanceBetweenTubes;
+	private int score = 0;
+	private int scoringTube = 0;
 
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		backgroundImage = new Texture("bg.png");
+		backgroundImage = new Texture("app_bg.jpg");
 		gameOver = new Texture("gameover.png");
 
 		font = new BitmapFont();
@@ -58,8 +58,8 @@ public class FlappyBird extends ApplicationAdapter {
 		font.getData().setScale(10);
 
 		birdImages = new Texture[2];
-		birdImages[0] = new Texture("bird.png");
-		birdImages[1] = new Texture("bird2.png");
+		birdImages[0] = new Texture("flappy1.png");
+		birdImages[1] = new Texture("flappy2.png");
 
 		topTube = new Texture("toptube.png");
 		bottomTube = new Texture("bottomtube.png");
